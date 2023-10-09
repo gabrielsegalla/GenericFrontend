@@ -1,0 +1,20 @@
+{
+    "Index": {
+      "title": "Bem vindo",
+      "description": "Esta é a página principal",
+      "instructionsLogin":{
+        "description1" : "Se deseja ",
+        "description2": "Entrar ",
+        "description3" : "utilize as seguintes contas padrões:",
+        "admin" : "Administrador (usuário=admin and senha=admin)",
+        "user": "Usuário (usuário=user e senha=user)"
+      },
+      "instructionCreateAccount": {
+        "description": "Não possui uma conta ainda?",
+        "link": "Crie uma nova conta"
+      }
+    },
+    "Register":{
+      "title": "Cadastro"
+    }
+}

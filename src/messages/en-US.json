@@ -1,0 +1,20 @@
+{
+  "Index": {
+    "title": "Welcome",
+    "description": "This is your homepage",
+    "instructionsLogin":{
+      "description1" : "If you want to ",
+      "description2": "Sign in ",
+      "description3" : ", you can try the default accounts:",
+      "admin" : "Administrator (login=admin and password=admin)",
+      "user": "User (login=user and password=user)."
+    },
+    "instructionCreateAccount": {
+      "description": "You don't have an account yet?",
+      "link": "Register a new account"
+    }
+  },
+  "Register":{
+    "title": "Registration"
+  }
+}
