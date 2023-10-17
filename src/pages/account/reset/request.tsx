@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import useAuth from '../../components/hook/useAuth';
+import useAuth from '../../../hook/useAuth';
 import {useTranslations} from 'next-intl';
 import { Container, Row, Col } from 'reactstrap';
 import { UilArrowCircleRight, UilAngleDown, UilHourglass, UilFeedback, UilGrin, UilMoon   } from '@iconscout/react-unicons'

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { getAuthToken } from '../pages/components/hook/getAuthToken';
+import { getAuthToken } from '../hook/getAuthToken';
 
 export const api = axios.create({
   baseURL: 'http://localhost:8080/api/',

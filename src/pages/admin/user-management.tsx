@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import useAuth from '../components/hook/useAuth';
+import useAuth from '../../hook/useAuth';
 import {useTranslations} from 'next-intl';
 import { Container, Row, Col } from 'reactstrap';
 import { UilArrowCircleRight, UilAngleDown, UilHourglass, UilFeedback, UilGrin, UilMoon   } from '@iconscout/react-unicons'
@@ -10,6 +10,7 @@ import { apiAuthenticated } from '../../lib/axios';
 import { ToastContainer, toast } from 'react-toastify';
 import { ColumnsType } from 'antd/es/table';
 import { error } from 'console';
+import ProtectedRoute from '../../components/ProtectedRoute';
 
 
 export default function UserManagement(props) {
@@ -107,7 +108,7 @@ export default function UserManagement(props) {
 
 
     return (
-    <>
+    <ProtectedRoute requiredPermissions={['ROLE_ADMIN']}>
         <Head>
             <title>GD - Usuários</title>
         </Head>
@@ -121,7 +122,7 @@ export default function UserManagement(props) {
                 </Col>
             </Row>
         </Layout>
-    </>
+    </ProtectedRoute>
     )
 }
 

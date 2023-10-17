@@ -1,7 +1,7 @@
 // components/Logout.js
 import React from 'react';
 import Cookies from 'js-cookie';
-import useAuth from './components/hook/useAuth';
+import useAuth from '../hook/useAuth';
 
 const Logout = () => {
     const { authenticated } = useAuth();    

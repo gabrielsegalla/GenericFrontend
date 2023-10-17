@@ -18,7 +18,7 @@ export default function Document() {
       </Head>
       <body>
         <Layout>
-          <Content style={{  minHeight: '100vh' }}>
+          <Content>
             <Main/>
             <NextScript/>
             <Footer style={{ textAlign: 'center'}}>footer</Footer>
