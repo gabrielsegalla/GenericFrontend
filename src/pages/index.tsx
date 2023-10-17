@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import { Button, Input, Layout } from 'antd';
+import { Layout } from 'antd';
 import {useTranslations} from 'next-intl';
-import { Container, Row, Col } from 'reactstrap';
-import { UilArrowCircleRight, UilAngleDown, UilHourglass, UilFeedback, UilGrin, UilMoon   } from '@iconscout/react-unicons'
-import { useEffect, useRef, useState } from 'react';
+import { Row, Col } from 'reactstrap';
+import { useEffect } from 'react';
 import Image from 'next/image';
-import Cookies from 'js-cookie';
 import Logo from '../assets/LogoGeneric.png'
 import { useAuth } from '../contexts/AuthContext';
 import { useRouter } from 'next/router';
@@ -46,19 +44,19 @@ export default function Home(props) {
               <p style={{width: 500}}>{t('description')}</p>
               {!authenticated  ? (
                 <>
-                  <Row style={{backgroundColor: '#ffa200', borderRadius: 10, marginTop: 15, width: 500, height: 100, padding: 20, color: '#fff'}}>
+                  <Row style={{backgroundColor: '#ffa200', borderRadius: 10, marginTop: 15, width: 500, padding: 20, color: '#fff'}}>
                     <p>{t('instructionsLogin.description1')} <b><a>{t('instructionsLogin.description2')}</a></b>{t('instructionsLogin.description3')}</p>
                     <p>{t('instructionsLogin.admin')}</p>
                     <p>{t('instructionsLogin.user')}</p>
                   </Row>
 
-                  <Row style={{backgroundColor: '#008cff', borderRadius: 10, marginTop: 15, width: 500, height: 80, padding: 20 , color: '#fff'}}>
+                  <Row style={{backgroundColor: '#008cff', borderRadius: 10, marginTop: 15, width: 500,  padding: 20 , color: '#fff'}}>
                     <p>{t('instructionCreateAccount.description')}</p>
                     <a href="account/register" style={{color: '#fff'}}><b>{t('instructionCreateAccount.link')}</b></a>
                   </Row>
                 </>
               ):(
-                <Row style={{backgroundColor: '#1be480', borderRadius: 10, marginTop: 15, width: 500, height: 80, padding: 20 , color: '#fff'}}>
+                <Row style={{backgroundColor: '#1be480', borderRadius: 10, marginTop: 15, width: 500,  padding: 20 , color: '#fff'}}>
                   <p>Você está logado como <b>{name}</b></p>
                 </Row>
               )}

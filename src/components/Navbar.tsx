@@ -39,7 +39,7 @@ const Navbar = ({}) => {
         key: "entities",
         icon: createElement(TableOutlined),
         children :[
-          {link: 'entities/movies', icon: createElement(ClusterOutlined ), key: 'admin1', label: 'Movies'},
+          {link: '/entities/movies', icon: createElement(ClusterOutlined ), key: 'entities1', label: 'Movies'},
         ]
       },
       {
@@ -49,7 +49,7 @@ const Navbar = ({}) => {
         key: "admin",
         icon: createElement(ClusterOutlined ),
         children :[
-          {link: 'admin/user-management', icon: createElement(ClusterOutlined ), key: 'admin1', label: 'User management'},
+          {link: '/admin/user-management', icon: createElement(ClusterOutlined ), key: 'admin1', label: 'User management'},
         ]
       },
       {
@@ -58,7 +58,7 @@ const Navbar = ({}) => {
         icon: createElement(UserOutlined),
         key: "account",
         children :[
-          {link: 'account/settings', icon: createElement(ClusterOutlined ),key: 'account1', label: 'Settings'},
+          {link: '/account/settings', icon: createElement(ClusterOutlined ),key: 'account1', label: 'Settings'},
           {link: '', icon: createElement(ClusterOutlined ),key: 'account2', label: 'Password'}
         ]
       }
@@ -78,7 +78,7 @@ const Navbar = ({}) => {
           <Container>
             <Row>
               <Col md={2}>
-                <a  href="/" style={{display:"flex", flexDirection:'row', alignItems: 'center'}}><h3 style={{color: '#fff'}}>GENERIC</h3>
+                <a  href="/" style={{display:"flex", flexDirection:'row', alignItems: 'center'}}><h3 style={{color: '#fff'}}>gdProject</h3>
                 <p style={{marginLeft: 15, fontSize: 8}}>V.0.1</p></a>
                 
               </Col>
